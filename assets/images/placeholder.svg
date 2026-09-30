@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#051f18"/>
+    </linearGradient>
+
+    <!-- Emerald Glow Accent -->
+    <radialGradient id="accentGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Glowing Accent Sphere -->
+  <circle cx="400" cy="225" r="200" fill="url(#accentGlow)"/>
+
+  <!-- Glassmorphism Card Element in Center -->
+  <rect x="250" y="125" width="300" height="200" rx="16" fill="rgba(17, 24, 39, 0.6)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" backdrop-filter="blur(10px)"/>
+
+  <!-- Code Graphic / Icon Placeholder -->
+  <g fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bracket Icon -->
+    <path d="M 370 200 L 345 225 L 370 250"/>
+    <path d="M 430 200 L 455 225 L 430 250"/>
+    <line x1="415" y1="195" x2="385" y2="255"/>
+  </g>
+
+  <!-- Label Text -->
+  <text x="400" y="295" font-family="monospace, 'Fira Code', sans-serif" font-size="14" fill="#9ca3af" text-anchor="middle" letter-spacing="1.5">
+    PROJECT PREVIEW
+  </text>
+</svg>
